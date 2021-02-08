@@ -1,10 +1,9 @@
 let theme = 'Bathroom Divination';
 console.log(`Theme: ${theme}.`);
 
-let line = 'You like to pee with the door open';
-
-let message = {
-    _person: ['Someone', 'You'],
+let length = 1;
+let messageParts = {
+    _person: ['Someone you know', 'You'],
     get person(){
         return this._person;
     },
@@ -24,4 +23,8 @@ let message = {
     get peculiarity(){
         return this._peculiarity;
     },
+    randomNumber(array) {
+        let len = array.length;
+        return Math.floor(Math.random() * len);
+    }
 }
