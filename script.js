@@ -1,4 +1,5 @@
 let theme = 'Bathroom Divination';
+console.log();
 console.log(`Theme: ${theme}.`);
 
 let length = 1;
@@ -35,11 +36,12 @@ let mixedMessages = {
         let pec = this.peculiarity[this.randomNumber(this.peculiarity)];
         let message = '';
         if (per === 'You') {
-            message = `${per} ${fv} ${c} ${sv} ${pec}.`;
+            message = `Today's fortune: \n${per} ${fv} ${c} ${sv} ${pec}.`;
         } else {
-            message = `${per} ${fv}s ${c} ${sv} ${pec}.`;
+            message = `Today's fortune: \n${per} ${fv}s ${c} ${sv} ${pec}.`;
         }
         return message;
     }
 }
 console.log(mixedMessages.messageGenerator());
+console.log();
